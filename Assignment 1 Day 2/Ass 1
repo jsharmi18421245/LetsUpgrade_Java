@@ -1,0 +1,31 @@
+package com.Employee;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+      Employee e = new Employee();
+      e.name="Sharmila";
+      e.age=18;
+      e.city="chennai";
+      e.display();
+      Employee e1 =  new Employee();
+      e1.name="Shiny";
+      e1.age=20;
+      e1.city="Helsinki";
+      e1.display();
+
+
+package com.Employee;
+
+public class Employee {
+    int age;
+    String name;
+    String city;
+    public void display(){
+        System.out.println("The name is"+ " "+name);
+        System.out.println("The age is"+" "+age);
+        System.out.println("The City is"+" "+city);
+    }
+
+}
