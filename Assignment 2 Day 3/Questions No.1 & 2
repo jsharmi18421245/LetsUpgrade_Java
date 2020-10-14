@@ -1,0 +1,63 @@
+/ Question No.1
+// Take 5 Subject Marks each subject 100 marks; Calculate the percentage; based on the percentage print the grade and the percentage
+
+
+package com.Percentage;
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+	 int marks[] = new int[5];
+	 int i;
+	 float per, sum=0;
+
+	 Scanner sc = new Scanner(System.in);
+
+	 System.out.print("Enter The 5 Subject Marks :");
+	 for (i=0; i<5; i++);
+        {
+            marks[i]= sc.nextInt();
+            sum = sum + marks[i];
+        }
+
+        per = (sum/500 * 100);
+
+        System.out.print("\nStudent Percentage is");
+
+
+
+
+
+    }
+}
+
+_______________________________________________________________________________________________________________________________________________________________________
+
+// Question No.2
+
+
+String employeename="sravan kumar";
+int date=11;  
+int month=9;
+int  year=1994;
+float monthlysalary=30000;
+float annualsalary=12*monthlysalary;
+int age=2020-year;
+float annual;
+
+if (annualsalary > 200000) {
+
+annual= (annualsalary *5)/(100+ annualsalary);
+}
+else if (annualsalary > 300000) {
+ annual= (annualsalary *10)/(100+ annualsalary);
+} 
+else if(annualsalary > 400000) {
+ annual= (annualsalary *15)/(100+ annualsalary);
+}
+else  {
+ annual= (annualsalary *20)/(100+ annualsalary);
+}
+
+System.out.println("name:"+ employeename+" age:"+age+" salar:"+annualsalary+" tax:"+annual);
