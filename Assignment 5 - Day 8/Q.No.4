@@ -1,0 +1,10 @@
+//Q.NO.4
+
+class Student { int idNum; String name; } class College{ public static void main(String[] args) 
+{ // declaring, creating and // initializating array objects Student[] st = {new Student(), new Student()}; 
+//displaying initialized values System.out.println("Initialized values of array:");
+for(int i=0; i < st.length; i++){ System.out.print(st[i]+"\t"); } 
+//initializing Student objects st[0].idNum = 9876; st[0].name = "Rocco"; st[1].idNum = 9865; 
+st[1].name = "Jerry"; //displaying Student objects values after initialization 
+System.out.println("\n\nStudent details:"); 
+for (int i=0; i < st.length; i++) { System.out.println("Student" + (i+1) +" idNumber: "+st[i].idNum); System.out.println("Student"+(i+1)+" name: "+st[i].name); } }
